@@ -72,6 +72,52 @@ retirement_income <- savings * 0.04
 print(retirement_income)
 ```
 
+## Exercise 5
+
+### Late Saving (Ages 56-65)
+
+```{r exercise5_late}
+savings <- 0
+income <- 58000
+interest_rate <- 0.06
+
+for(year in 22:65){
+  if(year >= 56){
+    savings <- savings * (1 + interest_rate) + income * 0.20
+  } else {
+    savings <- savings * (1 + interest_rate)
+  }
+  income <- income + 1000
+}
+
+late_savings <- savings
+print(late_savings)
+```
+
+### Early Saving (Ages 22-31)
+
+```{r exercise5_early}
+savings <- 0
+income <- 58000
+interest_rate <- 0.06
+
+for(year in 22:65){
+  if(year <= 31){
+    savings <- savings * (1 + interest_rate) + income * 0.10
+  } else {
+    savings <- savings * (1 + interest_rate)
+  }
+  income <- income + 1000
+}
+
+early_savings <- savings
+print(early_savings)
+```
+
+### Comparison
+
+Early saving is better than late saving. This is because compound interest helps our money grow over time. Starting early gives our savings more time to grow.
+
 
 
 
