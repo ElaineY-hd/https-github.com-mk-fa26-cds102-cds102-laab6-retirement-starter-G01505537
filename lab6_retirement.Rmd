@@ -26,7 +26,15 @@ print(savings)
 
 The savings are high because of compound interest. Our money earns interest every year, so it grows faster over time.
 
+## Exercise 2
 
+```{r exercise2}
+retirement_income <- savings * 0.04
+
+print(retirement_income)
+```
+
+The annual retirement income is about $46,344. It is less than our annual salary of $58,000.
 
 
 
