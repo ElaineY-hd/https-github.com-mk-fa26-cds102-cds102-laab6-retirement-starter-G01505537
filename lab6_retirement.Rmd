@@ -1,0 +1,33 @@
+---
+title: 'Lab 6: Saving for Retirement'
+author: "Elaine You"
+date: "2026-10-10"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exercise 1
+
+```{r exercise1}
+savings <- 0
+income <- 58000
+interest_rate <- 0.06
+savings_rate <- 0.10
+
+for(year in 22:65){
+  savings <- savings * (1 + interest_rate) + income * savings_rate
+}
+
+print(savings)
+```
+
+The savings are high because of compound interest. Our money earns interest every year, so it grows faster over time.
+
+
+
+
+
+
