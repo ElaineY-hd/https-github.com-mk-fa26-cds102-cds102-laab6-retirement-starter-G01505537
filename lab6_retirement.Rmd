@@ -36,6 +36,24 @@ print(retirement_income)
 
 The annual retirement income is about $46,344. It is less than our annual salary of $58,000.
 
+## Exercise 3
+
+```{r exercise3}
+savings <- 0
+income <- 58000
+interest_rate <- 0.06
+savings_rate <- 0.10
+employer_rate <- 0.05
+
+for(year in 22:65){
+  savings <- savings * (1 + interest_rate) + income * (savings_rate + employer_rate)
+}
+
+print(savings)
+```
+
+
+
 
 
 
