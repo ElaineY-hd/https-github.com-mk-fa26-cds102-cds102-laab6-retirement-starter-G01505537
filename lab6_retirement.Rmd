@@ -52,7 +52,25 @@ for(year in 22:65){
 print(savings)
 ```
 
+## Exercise 4
 
+```{r exercise4}
+savings <- 0
+income <- 58000
+interest_rate <- 0.06
+savings_rate <- 0.10
+employer_rate <- 0.05
+
+for(year in 22:65){
+  savings <- savings * (1 + interest_rate) + income * (savings_rate + employer_rate)
+  income <- income + 1000
+}
+
+print(savings)
+
+retirement_income <- savings * 0.04
+print(retirement_income)
+```
 
 
 
